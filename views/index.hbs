@@ -1,0 +1,10 @@
+<h1> this is an index page</h1>
+
+{{#each todos}}
+<div>
+    <a href="/todos/{{this.id}}">Title: {{this.title}} Description: {{this.description}}</a> -
+    <a href="/todos/edit/{{this.id}}">Edit</a> -
+    <a href="/todos/delete/{{this.id}}">Delete</a>
+</div>
+
+{{/each}}
